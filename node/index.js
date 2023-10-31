@@ -12,7 +12,7 @@ const mysql = require('mysql')
 
 app.get('/', (req,res) => {    
     const connection = mysql.createConnection(config)
-    connection.query(`INSERT INTO people(name) values('Ivan De Paula')`)
+    connection.query(`INSERT INTO people(name) values('Ivan Carlos')`)
 
     connection.query("SELECT name FROM people", function (err, result, fields) {
         if (err) {
@@ -32,8 +32,5 @@ app.get('/', (req,res) => {
 })
 
 app.listen(port, ()=> {
-    console.log('============================================')
     console.log('Servidor rodando na porta: ' + port)
-    console.log('============================================')
-    console.log('WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW')
 })
