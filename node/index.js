@@ -32,5 +32,5 @@ app.get('/', (req,res) => {
 })
 
 app.listen(port, ()=> {
-    console.log('Rodando na porta ' + port)
+    console.log('Servidor rodando na porta: ' + port)
 })
