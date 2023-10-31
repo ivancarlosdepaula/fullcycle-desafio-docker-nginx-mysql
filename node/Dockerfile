@@ -15,6 +15,6 @@ RUN apt-get update \
     && wget -O - https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz | tar xzf - -C /usr/local/bin \
     && apt-get autoremove -yqq --purge wget && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 3000
+EXPOSE 3003
 
 CMD ["node", "index.js"]

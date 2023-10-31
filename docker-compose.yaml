@@ -9,7 +9,7 @@ services:
     networks: 
       - node-network
     ports: 
-      - "8084:8080"
+      - "8084:8084"
     depends_on: 
        - app
 
@@ -25,7 +25,7 @@ services:
       - /usr/src/app/node_modules
     tty: true
     ports: 
-      - "3000:3000"
+      - "3003:3003"
     depends_on: 
        - db
 
